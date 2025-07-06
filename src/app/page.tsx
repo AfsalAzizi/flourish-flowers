@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Playfair_Display } from "next/font/google";
+import DoubleScrollDivider from "./components/DoubleScrollDivider";
 
 // Import Google Fonts
-const inter = Inter({ subsets: ["latin"] });
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
 const products = [
@@ -30,12 +30,10 @@ const products = [
 
 export default function Home() {
   return (
-    <div
-      className={`${inter.className} bg-gradient-to-br from-[#e0f7fa] via-[#fff1f2] to-[#ffe0e9] min-h-screen flex flex-col`}
-    >
+    <div className="min-h-screen flex flex-col">
       {/* Hero Section */}
       <section
-        className="min-h-screen flex items-center"
+        className="h-screen flex flex-col"
         style={{
           backgroundColor: "#8fd3de",
           backgroundImage: "url(/images/wall-block-3.png)",
@@ -44,11 +42,11 @@ export default function Home() {
           backgroundBlendMode: "multiply",
         }}
       >
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center">
+        <div className="flex-1 w-full grid grid-cols-1 md:grid-cols-2 items-center pt-20">
           {/* Text Content */}
-          <div className="px-10 pl-30 py-20 space-y-6 z-10">
+          <div className="px-10 space-y-6 z-10">
             <h1
-              className={`${playfair.className} text-5xl md:text-6xl leading-tight text-gray-800 text-left`}
+              className={`${playfair.className} pl-20 text-5xl md:text-6xl leading-tight text-gray-800 text-left`}
             >
               &#8220;RADIANT
               <br />
@@ -56,25 +54,10 @@ export default function Home() {
               <br />
               EVERY OCCASION&#8221;
             </h1>
-            {/* <div className="bg-white p-6 rounded-xl inline-block shadow-lg max-w-md">
-              <p className="text-lg font-medium text-gray-800 mb-4">
-                <span className="text-pink-600 font-bold text-xl">30% off</span>{" "}
-                on Gerbera
-                <br />
-                Buy super fresh and beautiful flowers, bouquets, decor your
-                special event with us.
-              </p>
-              <a
-                href="#"
-                className="inline-block px-6 py-3 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors duration-300 font-medium"
-              >
-                See More
-              </a>
-            </div> */}
           </div>
 
           {/* Image Content - Positioned to right edge */}
-          <div className="relative h-screen flex items-center justify-end">
+          <div className="relative h-full flex items-center justify-end">
             <div className="relative w-full h-full max-w-none">
               <Image
                 src="/images/hero-bg-removed.png"
@@ -86,25 +69,19 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        {/* Double Scroll Down Divider - Inside hero section */}
+        <DoubleScrollDivider />
       </section>
 
-      {/* Scroll Down Divider */}
-      <div className="w-full bg-[#ffe0e9] py-3 text-center text-lg text-pink-500 tracking-widest border-b border-pink-200">
-        <span
-          className={`${playfair.className} mx-2 animate-bounce inline-block`}
-        >
-          Scroll Down
-        </span>
-      </div>
-
       {/* Popular Products */}
-      <section id="popular" className="py-16 px-6 md:px-16 bg-white">
+      <section id="popular" className="py-16 px-6 md:px-16 bg-white mt-10">
         <h2
-          className={`${playfair.className} text-4xl font-bold text-center mb-4 text-gray-800`}
+          className={`${playfair.className} text-4xl font-semibold text-center mb-4 text-gray-800`}
         >
           POPULAR
         </h2>
-        <p className="text-center text-gray-500 mb-12 text-lg">
+        <p className="text-center text-gray-500 mb-12 text-lg max-w-xl mx-auto py-4">
           Fresh flowers are celebrated for their natural beauty and the wide
           range of colors, shapes, and sizes.
         </p>
