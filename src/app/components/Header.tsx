@@ -46,7 +46,7 @@ const Header: React.FC = () => {
         <div className="hidden md:flex">
           <a
             href="#"
-            className="bg-pink-500 hover:bg-pink-600 text-white font-semibold rounded-full px-6 py-2 text-lg shadow transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400"
+            className="bg-black hover:bg-pink-600 text-white font-semibold rounded-md px-6 py-2 text-lg shadow transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-400"
           >
             Order Now
           </a>

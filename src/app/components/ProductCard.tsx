@@ -8,6 +8,7 @@ interface ProductCardProps {
   price: string;
   image: string;
   alt?: string;
+  bgColor?: string;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -18,14 +19,16 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="relative w-full aspect-[3/4] mb-6 overflow-hidden bg-gray-100">
-        <Image
-          src={image}
-          alt={alt || name}
-          fill
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-        />
+      <div className={`relative w-full aspect-[3/4] mb-6 overflow-hidden`}>
+        <div className="relative w-full h-full">
+          <Image
+            src={image}
+            alt={alt || name}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+          />
+        </div>
       </div>
       <div
         className={`${playfair.className} text-xl text-gray-700 mb-2 text-center`}
