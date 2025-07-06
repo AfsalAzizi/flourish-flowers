@@ -1,32 +1,10 @@
 import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 import DoubleScrollDivider from "./components/DoubleScrollDivider";
+import ProductCarousel from "./components/ProductCarousel";
 
 // Import Google Fonts
 const playfair = Playfair_Display({ subsets: ["latin"] });
-
-const products = [
-  {
-    name: "Pure Radiance",
-    price: "$24.99",
-    img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "Spring Embrace",
-    price: "$19.99",
-    img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "Lily Grace",
-    price: "$29.99",
-    img: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=400&q=80",
-  },
-  {
-    name: "Cone Blossom",
-    price: "$22.99",
-    img: "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80",
-  },
-];
 
 export default function Home() {
   return (
@@ -74,42 +52,8 @@ export default function Home() {
         <DoubleScrollDivider />
       </section>
 
-      {/* Popular Products */}
-      <section id="popular" className="py-16 px-6 md:px-16 bg-white mt-10">
-        <h2
-          className={`${playfair.className} text-4xl font-semibold text-center mb-4 text-gray-800`}
-        >
-          POPULAR
-        </h2>
-        <p className="text-center text-gray-500 mb-12 text-lg max-w-xl mx-auto py-4">
-          Fresh flowers are celebrated for their natural beauty and the wide
-          range of colors, shapes, and sizes.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {products.map((product, idx) => (
-            <div
-              key={idx}
-              className="bg-[#f8fafc] rounded-2xl shadow-lg p-6 flex flex-col items-center border border-pink-100 hover:shadow-xl transition-shadow duration-300"
-            >
-              <Image
-                src={product.img}
-                alt={product.name}
-                width={160}
-                height={200}
-                className="rounded-xl object-cover mb-4"
-              />
-              <div
-                className={`${playfair.className} text-xl font-semibold text-gray-700 mb-2 text-center`}
-              >
-                {product.name}
-              </div>
-              <div className="text-pink-600 font-bold text-lg">
-                {product.price}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* Popular Products Carousel */}
+      <ProductCarousel />
 
       {/* Modern Collection */}
       <section className="py-16 px-6 md:px-16 bg-[#fff1f2] flex flex-col md:flex-row items-center gap-12">
