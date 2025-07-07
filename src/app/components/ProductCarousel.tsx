@@ -39,42 +39,42 @@ const ProductCarousel: React.FC = () => {
   const products: Product[] = [
     {
       name: "Pure Radiance",
-      price: "AED 24.99",
+      price: "AED 321.99",
       img: "/images/product-1.jpg",
     },
     {
       name: "Spring Embrace",
-      price: "AED 19.99",
+      price: "AED 290.99",
       img: "/images/product-9.jpg",
     },
     {
       name: "Lily Grace",
-      price: "AED 29.99",
+      price: "AED 150.99",
       img: "/images/product-3.jpg",
     },
     {
       name: "Cone Blossom",
-      price: "AED 22.99",
+      price: "AED 220.99",
       img: "/images/product-4.jpg",
     },
     {
       name: "Rose Elegance",
-      price: "AED 34.99",
+      price: "AED 120.99",
       img: "/images/product-5.jpg",
     },
     {
       name: "Garden Delight",
-      price: "AED 27.99",
+      price: "AED 190.99",
       img: "/images/product-6.jpg",
     },
     {
       name: "Sunset Bloom",
-      price: "AED 31.99",
+      price: "AED 210.99",
       img: "/images/product-10.jpg",
     },
     {
       name: "Morning Glory",
-      price: "AED 26.99",
+      price: "AED 220.99",
       img: "/images/product-8.jpg",
     },
   ];

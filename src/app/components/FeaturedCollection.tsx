@@ -34,10 +34,10 @@ const FeaturedCollection: React.FC = () => {
           />
           <div className="absolute bottom-4 md:bottom-6 right-4 md:right-6 bg-white px-4 md:px-6 py-2 md:py-3 shadow-lg rounded-full">
             <span className="text-pink-600 font-bold text-lg md:text-xl">
-              AED 12
+              AED 150.99
             </span>
             <span className="text-xs md:text-sm text-gray-400 line-through ml-2">
-              AED 16
+              AED 160.99
             </span>
           </div>
         </div>
