@@ -17,17 +17,28 @@ export default function Home() {
       <section
         className="h-screen flex flex-col"
         style={{
-          backgroundColor: "#8fd3de",
-          backgroundImage: "url(/images/wall-block-3.png)",
-          backgroundSize: "auto",
-          backgroundBlendMode: "multiply",
+          backgroundColor: "#f8f6f0",
+          // backgroundImage: "url(/images/hero-image-petal.jpg)",
+          // backgroundSize: "cover",
+          // backgroundPosition: "center",
+          // backgroundRepeat: "no-repeat",
         }}
       >
         <div className="flex-1 w-full grid grid-cols-1 md:grid-cols-2 items-center pt-20">
           {/* Text Content */}
-          <div className="px-10 space-y-6 z-10">
+          <div className="relative px-10 space-y-6 z-10">
+            {/* Petal Background Behind Text */}
+            <div className="absolute -top-8 -left-4 w-96 h-96 flex pointer-events-none z-0">
+              <Image
+                src="/images/petal-removebg.png"
+                alt="Decorative petals"
+                width={400}
+                height={400}
+                className="object-contain opacity-40 transform rotate-12"
+              />
+            </div>
             <h1
-              className={`${playfair.className} pl-20 text-5xl md:text-6xl leading-tight text-gray-800 text-left`}
+              className={`${playfair.className} relative pl-20 text-5xl md:text-6xl leading-tight text-gray-800 text-left z-20`}
             >
               &#8220;RADIANT
               <br />
