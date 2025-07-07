@@ -26,7 +26,7 @@ const WhyChooseUs: React.FC = () => {
       ),
       title: "Premium Quality",
       description:
-        "Hand-selected fresh flowers from the finest gardens, ensuring exceptional quality and longevity.",
+        "Hand-selected fresh flowers from the finest gardens, ensuring exceptional quality and longevity",
     },
     {
       icon: (
@@ -42,7 +42,7 @@ const WhyChooseUs: React.FC = () => {
       ),
       title: "Same-Day Delivery",
       description:
-        "Fast and reliable delivery service to ensure your flowers arrive fresh and on time.",
+        "Fast and reliable delivery service to ensure your flowers arrive fresh and on time",
     },
     {
       icon: (
@@ -58,7 +58,7 @@ const WhyChooseUs: React.FC = () => {
       ),
       title: "100% Satisfaction",
       description:
-        "We guarantee your complete satisfaction with every order, or we'll make it right.",
+        "We guarantee your complete satisfaction with every order, or we'll make it right",
     },
     {
       icon: (
@@ -74,7 +74,7 @@ const WhyChooseUs: React.FC = () => {
       ),
       title: "Expert Florists",
       description:
-        "Our skilled florists create stunning arrangements with years of experience and artistic flair.",
+        "Our skilled florists create stunning arrangements with years of experience and artistic flair",
     },
   ];
 
@@ -161,7 +161,7 @@ const WhyChooseUs: React.FC = () => {
               memorable experiences through the art of flowers. Our commitment
               to quality, creativity, and customer satisfaction has made us the
               preferred choice for celebrations, special occasions, and everyday
-              moments of joy.
+              moments of joy
             </p>
 
             {/* Key Points */}
