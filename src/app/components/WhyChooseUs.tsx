@@ -79,16 +79,16 @@ const WhyChooseUs: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 px-6 md:px-16 bg-gradient-to-br from-pink-50 to-white">
+    <section className="py-16 md:py-20 px-4 md:px-6 lg:px-16 bg-gradient-to-br from-pink-50 to-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16 md:mb-20">
           <h2
-            className={`${playfair.className} text-4xl md:text-5xl text-gray-800 mb-12`}
+            className={`${playfair.className} text-3xl md:text-4xl lg:text-5xl text-gray-800 mb-8 md:mb-12`}
           >
             Why Choose FlourishFlowers?
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             We&apos;re passionate about delivering the finest floral
             experiences, combining traditional craftsmanship with modern
             convenience to bring beauty to your special moments
@@ -96,18 +96,18 @@ const WhyChooseUs: React.FC = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 mb-20 md:mb-24">
           {features.map((feature, index) => (
-            <div key={index} className="text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-pink-100 text-pink-600 rounded-full mb-6 group-hover:bg-pink-200 transition-colors duration-300">
+            <div key={index} className="text-center group px-4">
+              <div className="inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 bg-pink-100 text-pink-600 rounded-full mb-4 md:mb-6 group-hover:bg-pink-200 transition-colors duration-300">
                 {feature.icon}
               </div>
               <h3
-                className={`${playfair.className} text-xl font-semibold text-gray-800 mb-3`}
+                className={`${playfair.className} text-lg md:text-xl font-semibold text-gray-800 mb-2 md:mb-3`}
               >
                 {feature.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
                 {feature.description}
               </p>
             </div>
@@ -115,10 +115,10 @@ const WhyChooseUs: React.FC = () => {
         </div>
 
         {/* Image and Stats Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Image */}
-          <div className="relative">
-            <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative px-4 md:px-0">
+            <div className="relative w-full h-80 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/images/why-choose-us.png"
                 alt="Beautiful flower arrangement"
@@ -127,36 +127,40 @@ const WhyChooseUs: React.FC = () => {
               />
             </div>
             {/* Floating Stats Cards */}
-            <div className="absolute -top-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
+            <div className="absolute -top-4 md:-top-6 -right-2 md:-right-6 bg-white rounded-2xl p-4 md:p-6 shadow-xl">
               <div className="text-center">
                 <div
-                  className={`${playfair.className} text-3xl font-bold text-pink-600`}
+                  className={`${playfair.className} text-2xl md:text-3xl font-bold text-pink-600`}
                 >
                   10K+
                 </div>
-                <div className="text-sm text-gray-600">Happy Customers</div>
+                <div className="text-xs md:text-sm text-gray-600">
+                  Happy Customers
+                </div>
               </div>
             </div>
-            <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl p-6 shadow-xl">
+            <div className="absolute -bottom-4 md:-bottom-6 -left-2 md:-left-6 bg-white rounded-2xl p-4 md:p-6 shadow-xl">
               <div className="text-center">
                 <div
-                  className={`${playfair.className} text-3xl font-bold text-pink-600`}
+                  className={`${playfair.className} text-2xl md:text-3xl font-bold text-pink-600`}
                 >
                   5★
                 </div>
-                <div className="text-sm text-gray-600">Average Rating</div>
+                <div className="text-xs md:text-sm text-gray-600">
+                  Average Rating
+                </div>
               </div>
             </div>
           </div>
 
           {/* Content */}
-          <div className="space-y-6">
+          <div className="space-y-4 md:space-y-6 px-4 md:px-0">
             <h3
-              className={`${playfair.className} text-3xl font-bold text-gray-800`}
+              className={`${playfair.className} text-2xl md:text-3xl font-bold text-gray-800`}
             >
               Trusted by Thousands of Customers
             </h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-600 leading-relaxed">
               Since our founding, we&apos;ve been dedicated to creating
               memorable experiences through the art of flowers. Our commitment
               to quality, creativity, and customer satisfaction has made us the
@@ -165,47 +169,58 @@ const WhyChooseUs: React.FC = () => {
             </p>
 
             {/* Key Points */}
-            <div className="space-y-4">
+            <div className="space-y-3 md:space-y-4">
               <div className="flex items-center gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
-                  <svg width="14" height="14" fill="white" viewBox="0 0 24 24">
+                <div className="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
+                  <svg
+                    width="12"
+                    height="12"
+                    className="md:w-3.5 md:h-3.5"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.4 7.4-6-4.6-6 4.6 2.4-7.4-6-4.6h7.6z" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">
+                <span className="text-gray-700 font-medium text-sm md:text-base">
                   Fresh flowers sourced daily from premium suppliers
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
-                  <svg width="14" height="14" fill="white" viewBox="0 0 24 24">
+                <div className="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
+                  <svg
+                    width="12"
+                    height="12"
+                    className="md:w-3.5 md:h-3.5"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">
+                <span className="text-gray-700 font-medium text-sm md:text-base">
                   Custom arrangements for every occasion
                 </span>
               </div>
               <div className="flex items-center gap-3">
-                <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
-                  <svg width="14" height="14" fill="white" viewBox="0 0 24 24">
+                <div className="flex-shrink-0 w-7 h-7 md:w-8 md:h-8 bg-gradient-to-br from-pink-400 to-pink-600 rounded-full flex items-center justify-center shadow-lg transform hover:scale-105 transition-transform duration-200">
+                  <svg
+                    width="12"
+                    height="12"
+                    className="md:w-3.5 md:h-3.5"
+                    fill="white"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M19 7c0-1.1-.9-2-2-2h-3V3c0-.55-.45-1-1-1H8c-.55 0-1 .45-1 1v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V7zM9 4h2v1H9V4zm8 14H4V8h3v1c0 .55.45 1 1 1s1-.45 1-1V8h2v1c0 .55.45 1 1 1s1-.45 1-1V8h3v10z" />
                     <circle cx="9" cy="13" r="1.5" />
                     <circle cx="15" cy="13" r="1.5" />
                     <path d="M12 15.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
                   </svg>
                 </div>
-                <span className="text-gray-700 font-medium">
+                <span className="text-gray-700 font-medium text-sm md:text-base">
                   Professional delivery across the city
                 </span>
               </div>
-            </div>
-
-            {/* CTA Button */}
-            <div className="pt-4">
-              <button className="bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all duration-300 hover:shadow-xl">
-                Shop Our Collection
-              </button>
             </div>
           </div>
         </div>

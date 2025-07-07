@@ -5,27 +5,31 @@ const playfair = Playfair_Display({ subsets: ["latin"] });
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-900 text-gray-200 py-12 px-6 md:px-16 mt-auto">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        <div>
-          <h5 className={`${playfair.className} text-2xl mb-4 text-white`}>
+    <footer className="bg-gray-900 text-gray-200 py-10 md:py-12 px-4 md:px-6 lg:px-16 mt-auto">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="sm:col-span-2 lg:col-span-1">
+          <h5
+            className={`${playfair.className} text-xl md:text-2xl mb-3 md:mb-4 text-white`}
+          >
             FlourishFlowers
           </h5>
-          <p className="text-gray-400">
+          <p className="text-gray-400 text-sm md:text-base">
             Elegant, fresh, and hand-picked flowers delivered to your door. Make
             every moment bloom with FlourishFlowers
           </p>
         </div>
 
         <div>
-          <h6 className={`${playfair.className} mb-4 text-white text-2xl`}>
+          <h6
+            className={`${playfair.className} mb-3 md:mb-4 text-white text-lg md:text-2xl`}
+          >
             Information
           </h6>
-          <ul className="space-y-2">
+          <ul className="space-y-1.5 md:space-y-2">
             <li>
               <a
                 href="#"
-                className="hover:text-white text-gray-400 transition-colors"
+                className="hover:text-white text-gray-400 transition-colors text-sm md:text-base"
               >
                 About Us
               </a>
@@ -33,7 +37,7 @@ const Footer: React.FC = () => {
             <li>
               <a
                 href="#"
-                className="hover:text-white text-gray-400 transition-colors"
+                className="hover:text-white text-gray-400 transition-colors text-sm md:text-base"
               >
                 Delivery Info
               </a>
@@ -41,7 +45,7 @@ const Footer: React.FC = () => {
             <li>
               <a
                 href="#"
-                className="hover:text-white text-gray-400 transition-colors"
+                className="hover:text-white text-gray-400 transition-colors text-sm md:text-base"
               >
                 Privacy Policy
               </a>
@@ -50,19 +54,21 @@ const Footer: React.FC = () => {
         </div>
 
         <div>
-          <h6 className={`${playfair.className}  mb-4 text-white text-2xl`}>
+          <h6
+            className={`${playfair.className} mb-3 md:mb-4 text-white text-lg md:text-2xl`}
+          >
             Contact Us
           </h6>
           {/* Social Media Icons */}
-          <div className="mt-2 mb-4">
-            <div className="flex space-x-4">
+          <div className="mt-2 mb-3 md:mb-4">
+            <div className="flex space-x-3 md:space-x-4">
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center text-gray-200 hover:text-white transition-all duration-300"
+                className="w-9 h-9 md:w-10 md:h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center text-gray-200 hover:text-white transition-all duration-300"
                 aria-label="Facebook"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4 md:w-5 md:h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -71,11 +77,11 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center text-gray-200 hover:text-white transition-all duration-300"
+                className="w-9 h-9 md:w-10 md:h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center text-gray-200 hover:text-white transition-all duration-300"
                 aria-label="Instagram"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4 md:w-5 md:h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -84,11 +90,11 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center text-gray-200 hover:text-white transition-all duration-300"
+                className="w-9 h-9 md:w-10 md:h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center text-gray-200 hover:text-white transition-all duration-300"
                 aria-label="Twitter"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4 md:w-5 md:h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -97,11 +103,11 @@ const Footer: React.FC = () => {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center text-gray-200 hover:text-white transition-all duration-300"
+                className="w-9 h-9 md:w-10 md:h-10 bg-gray-800 hover:bg-pink-600 rounded-full flex items-center justify-center text-gray-200 hover:text-white transition-all duration-300"
                 aria-label="Pinterest"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4 md:w-5 md:h-5"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -110,22 +116,21 @@ const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          <ul className="space-y-2">
+          <ul className="space-y-1.5 md:space-y-2">
             <li className="flex items-center gap-2 text-gray-400 hover:text-white">
-              Email:{" "}
+              <span className="text-xs md:text-sm">Email:</span>
               <a
                 href="mailto:info@flourishflowers.com"
-                className="transition-colors text-gray-400 hover:text-white"
+                className="transition-colors text-gray-400 hover:text-white text-xs md:text-sm"
               >
                 info@flourishflowers.com
               </a>
             </li>
             <li className="flex items-center gap-2 text-gray-400 hover:text-white">
-              Phone:{" "}
+              <span className="text-xs md:text-sm">Phone:</span>
               <a
                 href="tel:+971523469463"
-                className="
-                 transition-colors text-gray-400 hover:text-white"
+                className="transition-colors text-gray-400 hover:text-white text-xs md:text-sm"
               >
                 +971 52 346 9463
               </a>
@@ -134,25 +139,27 @@ const Footer: React.FC = () => {
         </div>
 
         <div>
-          <h6 className={`${playfair.className} mb-4 text-white text-2xl`}>
+          <h6
+            className={`${playfair.className} mb-3 md:mb-4 text-white text-lg md:text-2xl`}
+          >
             Newsletters
           </h6>
-          <p className="text-gray-400 text-sm mb-4">
+          <p className="text-gray-400 text-xs md:text-sm mb-3 md:mb-4">
             Get updates by subscribe our weekly newsletter
           </p>
           <form className="relative">
             <input
               type="email"
               placeholder="Your email"
-              className="w-full px-4 py-3 pr-12 border border-slate-600 focus:border-pink-500 focus:ring-2 focus:ring-pink-500 outline-none transition-colors duration-300 text-white bg-transparent placeholder-gray-400"
+              className="w-full px-3 md:px-4 py-2.5 md:py-3 pr-10 md:pr-12 border border-slate-600 focus:border-pink-500 focus:ring-2 focus:ring-pink-500 outline-none transition-colors duration-300 text-white bg-transparent placeholder-gray-400 text-sm md:text-base"
             />
             <button
               type="submit"
-              className="absolute right-3 top-1/2 -translate-y-1/2 w-8 h-8 bg-pink-600 hover:bg-pink-700 text-white rounded-full flex items-center justify-center transition-colors duration-300"
+              className="absolute right-2.5 md:right-3 top-1/2 -translate-y-1/2 w-7 h-7 md:w-8 md:h-8 bg-pink-600 hover:bg-pink-700 text-white rounded-full flex items-center justify-center transition-colors duration-300"
               aria-label="Subscribe"
             >
               <svg
-                className="w-4 h-4"
+                className="w-3.5 h-3.5 md:w-4 md:h-4"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -169,7 +176,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="text-center text-gray-500 text-sm mt-8 pt-8 border-t border-gray-800">
+      <div className="text-center text-gray-500 text-xs md:text-sm mt-6 md:mt-8 pt-6 md:pt-8 border-t border-gray-800">
         &copy; {new Date().getFullYear()} FlourishFlowers. All rights reserved.
       </div>
     </footer>
