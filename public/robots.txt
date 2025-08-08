@@ -1,0 +1,52 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://flourishflowers.ae/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important pages
+Allow: /
+Allow: /about/
+Allow: /products/
+Allow: /contact/
+Allow: /delivery/
+Allow: /wedding-flowers/
+Allow: /birthday-flowers/
+Allow: /corporate-flowers/
+
+# Googlebot specific rules
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot specific rules
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Image optimization
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /public/images/
+
+# Mobile optimization
+User-agent: Googlebot-Mobile
+Allow: /
+
+# Ads optimization
+User-agent: AdsBot-Google
+Allow: /
+
+# Mediapartners optimization
+User-agent: Mediapartners-Google
+Allow: / 

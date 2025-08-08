@@ -1,0 +1,80 @@
+{
+  "name": "Flourish Flowers UAE",
+  "short_name": "Flourish Flowers",
+  "description": "Premium flower delivery across UAE - Dubai, Abu Dhabi, Sharjah",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff1f2",
+  "theme_color": "#ec4899",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["lifestyle", "shopping"],
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/hero-img.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Flourish Flowers UAE Homepage"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Wedding Flowers",
+      "short_name": "Wedding",
+      "description": "Browse wedding flower collections",
+      "url": "/wedding-flowers",
+      "icons": [
+        {
+          "src": "/images/product-1.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Birthday Flowers",
+      "short_name": "Birthday",
+      "description": "Browse birthday flower collections",
+      "url": "/birthday-flowers",
+      "icons": [
+        {
+          "src": "/images/product-2.jpg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Contact Us",
+      "short_name": "Contact",
+      "description": "Get in touch with us",
+      "url": "/contact",
+      "icons": [
+        {
+          "src": "/images/contact-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
