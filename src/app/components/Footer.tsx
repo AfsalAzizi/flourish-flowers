@@ -132,7 +132,7 @@ const Footer: React.FC = () => {
                 href="tel:+971523469463"
                 className="transition-colors text-gray-400 hover:text-white text-xs md:text-sm"
               >
-                +971 52 346 9463
+                +971 50 867 9752
               </a>
             </li>
           </ul>
